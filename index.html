@@ -6,97 +6,142 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Utama</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 
 <body>
-    <form method="post" action="">
-        <table>
-            <tr>
-                <td width="50%">NIM</td>
-                <td>:</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td width="50%">NAMA</td>
-                <td>:</td>
-                <td><input type="text" size="40"></td>
-            </tr>
-            <tr>
-                <td width="50%">JENIS KELAMIN</td>
-                <td>:</td>
-                <td>
-                      <input type="radio" id="pria" name="jk" value="HTML">
-                      <label for="pria">Laki-Laki</label>
-                      <input type="radio" id="wanita" name="jk" value="wanita">
-                      <label for="wanita">Perempuan</label>
+    <div class="container">
+        <div class="row">
 
-                </td>
-            </tr>
-            <tr>
-                <td width="50%">JURUSAN</td>
-                <td>:</td>
-                <td>
-                    <select name="jurusan">
-                        <option>Pilih....</option>
-                        <option>ILMU KOMPUTER</option>
-                        <option>DKV</option>
-                        <option>MANAJMEN</option>
-                        <option>GIZI</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td width="50%">HOBY</td>
-                <td>:</td>
-                <td>
-                    <input type="checkbox" id="komputer" name="komputer" value="Komputer">
-                    <label for="komputer">Komputer</label>
-                    <input type="checkbox" id="musik" name="musik" value="Musik">
-                    <label for="musik">Musik</label>
-                    <input type="checkbox" id="olahraga" name="olahraga" value="Olahraga">
-                    <label for="olahraga">Olahraga</label>
-                    <input type="checkbox" id="travelling" name="travelling" value="Travelling">
-                    <label for="travelling">Travelling</label>
-                </td>
-            </tr>
+            <h2 align="center">Form Biodata</h2>
+            <form action="post" method="">
 
-            <tr>
-                <td width="50%">CATATAN</td>
-                <td>:</td>
-                <td><textarea name="catatan" rows="4" cols="50"></textarea></td>
-            </tr>
-            <tr>
-                <td width="50%">FOTO</td>
-                <td>:</td>
-                <td><input type="file"></td>
-            </tr>
-            <tr>
-                <td width="50%">EMAIL</td>
-                <td>:</td>
-                <td><input type="email" size="40"></td>
-            </tr>
-            <tr>
-                <td width="50%">SANDI LOGIN</td>
-                <td>:</td>
-                <td><input type="password" size="40"></td>
-            </tr>
-            <tr>
-                <td width="50%">ULANGI SANDI LOGIN</td>
-                <td>:</td>
-                <td><input type="password" size="40"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>
-                    <input type="submit" value="Sinpan">
-                    <input type="submit" value="Batal">
-                    <input type="submit" value="Peringatan">
-                </td>
-            </tr>
-        </table>
-        <hr>
-    </form>
+                <div class="mb-3">
+
+                    <label for="">NIM</label>
+                    <input class="form-control" type="text" size="12">
+                </div>
+                <div class="mb-3">
+                    <tr>
+                        <td>NAMA</td>
+                        <td><input class="form-control" type="text" size="30"></td>
+                    </tr>
+                </div>
+                <div class="mb-3">
+                    <tr>
+                        <label for="">JENIS KELAMIN</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Laki-Laki
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Perempuan
+                            </label>
+                        </div>
+
+                    </tr>
+                </div>
+
+                <div class="mb-3">
+                    <tr>
+                        <label for="">JURUSAN</label>
+                        <td><select name="Jurusan" class="form-control">
+                                <option value="">Pilih Jurusan</option>
+                                <option value="D3SI">D3 SI</option>
+                                <option value="S1RPL">S1 RPL</option>
+                            </select></td>
+                    </tr>
+                </div>
+
+                <div class="mb-3">
+                    <tr>
+                        <label>HOBY</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                KOMPUTER
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                OLAHRAGA
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                MUSIK
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                TRAVELING
+                            </label>
+                        </div>
+                    </tr>
+                </div>
+
+                <div class="mb-3">
+                    <tr>
+                        <td><label for="catatan">CATATAN</label></td>
+                        <td><textarea required class="form-control" name="" id="" cols="30" rows="6"></textarea>
+                        </td>
+
+                    </tr>
+                </div>
+                <div class="mb-3">
+                    <tr>
+                        <label for="">FOTO</label>
+                        <td>
+                            <input class="form-control" type="file">
+                        </td>
+                    </tr>
+                </div>
+                <div class="mb-3">
+                    <tr>
+                        <td>
+                            EMAIL
+                        </td>
+                        <td>
+                            <input class="form-control" required type="email" placeholder="Masukan Email Anda.....">
+                        </td>
+                    </tr>
+                </div>
+                <div class="mb-3">
+                    <tr>
+                        <label for="">SANDI LOGIN</label>
+                        <td>
+                            <input class="form-control" type="password" placeholder="Password...">
+                        </td>
+                    </tr>
+                </div>
+                <div class="mb-3">
+                    <tr>
+                        <label for="">ULANGI SANDI LOGIN</label>
+                        <td>
+                            <input class="form-control" type="password" placeholder="Ulangi Password">
+                        </td>
+                    </tr>
+                </div>
+                <div class="mb-3">
+                    <tr>
+                        <td></td>
+                        <td><input class="btn btn-primary" type="submit" name="submit" value="Simpan"></td>
+                        <td><input class="btn btn-secondary" type="reset" value="Batal">
+                            <input class="btn btn-danger" type="submit" name="Peringatan" value="Peringatan"></td>
+                    </tr>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
